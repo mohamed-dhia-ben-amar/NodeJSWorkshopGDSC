@@ -8,6 +8,10 @@ const port = 3000;
 // Create Express app
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 // Parse JSON body
 // The line is middleware in Express.js that parses incoming requests with JSON payloads.
 app.use(express.json());
